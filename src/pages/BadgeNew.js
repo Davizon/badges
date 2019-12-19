@@ -35,10 +35,11 @@ class BadgeNew extends React.Component {
           <div className="row">
             <div className="col-6">
               <Badge
-                firstName={this.state.form.firstName}
-                lastName={this.state.form.lastName}
-                twitter={this.state.form.twitter}
-                jobTitle={this.state.form.jobTitle}
+                firstName={this.state.form.firstName || 'FisrtName'}
+                lastName={this.state.form.lastName || 'LastName'}
+                twitter={this.state.form.twitter || 'Twitter'}
+                email={this.state.form.email || 'Email'}
+                jobTitle={this.state.form.jobTitle || 'jobTitle'}
                 avatarUrl="https://media.licdn.com/dms/image/C4D03AQF_3VGpsDuHrw/profile-displayphoto-shrink_200_200/0?e=1582156800&v=beta&t=tWx5u38VKNpwjuc7yiXcB9jVt_0bE7anmvNod9_VCkM"
               />
             </div>
